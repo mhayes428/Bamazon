@@ -12,3 +12,27 @@ const table = new Table({
     colAligns: ['', '', '', 'right', 'right'], 
     style: { 'padding-top': 100 }
 });
+
+const options = () => {
+
+    inquirer.prompt([
+        {
+            name: 'choice',
+            type: 'list',
+            message: 'Who are you?',
+            choices: ['Customer']
+        }
+    ]).then(answers => {
+        switch (answers.choice) {
+            case 'Customer':
+                showAll(() => {
+                    customer();
+                });
+                break;
+                default:
+                    console.log(chalk`{bold.green Have a Great Day!}`);
+                    con.end();
+                    break;
+            };
+        });
+};
