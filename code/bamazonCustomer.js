@@ -72,7 +72,6 @@ const updateStore = (newTotal, id, newSales) => {
             shopAgain();
         });
 };
-
 const shopAgain = () => {
     inquirer.prompt([
         {
