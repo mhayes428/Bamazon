@@ -6,9 +6,9 @@ var Table = require("cli-table");
 //MySQL connection information
 var connection = mysql.createConnection({
     host: "localhost",
-    port: 8889,
+    port: 3306,
     user: "root",
-    password: "",
+    password: "2541",
     database: "bamazon"
 
 });
