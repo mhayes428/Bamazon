@@ -25,7 +25,7 @@ connection.connect(function(err) {
 //Function to start bamazon and display products
 var displayProducts = function() {
 
-    console.log("Welcome to Bamazon! Please, find our inventory bellow.");
+    console.log("Welcome to Bamazon! Please check out our inventory below!");
 
     //Query DB
     connection.query("SELECT * FROM products", function(err, res) {
