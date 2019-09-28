@@ -3,7 +3,7 @@ var mysql = require("mysql");
 var inquirer = require("inquirer");
 var Table = require("cli-table");
 
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 8080;
 
 var connection = mysql.createConnection({
     host: "localhost",
