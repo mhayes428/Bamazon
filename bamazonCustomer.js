@@ -9,7 +9,15 @@ var connection = mysql.createConnection({
     port: 3306,
     user: "root",
     password: "2541",
-    database: "bamazon"
+    database: "bamazon_db"
 
 });
 
+
+connection.end(function(err) {
+
+    if (err) throw err;
+
+    console.log("Connected as ID: " + connection.threadId);
+
+});
